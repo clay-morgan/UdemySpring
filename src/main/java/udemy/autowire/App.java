@@ -11,12 +11,12 @@ public class App
     public static void main( String[] args )
     {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext( "beans.xml" );
+        ApplicationContext context = new ClassPathXmlApplicationContext( "beans/beans.xml" );
 
         Logger logger = ( Logger ) context.getBean( "logger" );
 
-        logger.writeConsole( "oh hai" );
-        logger.writeFile( "HAI FILE" );
+        logger.writeConsole( "oh hai console" );
+        logger.writeFile( "HAI FILE!!1" );
 
         ( ( ClassPathXmlApplicationContext ) context ).close();
     }
