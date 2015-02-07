@@ -14,7 +14,7 @@ public class Robot
     private String speech = "I am A.W.E.S.O.M.E.O. (default speech)";
 
     @Autowired
-    public void setId( @Value( "${jdbc.user}" ) String id )
+    public void setId( @Value( "${jdbc.username}" ) String id )
     {
         this.id = id;
     }
